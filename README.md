@@ -17,3 +17,4 @@ Cirecle Area calculator applied
 
 Rectangle Area feature added
 
+Final vwerion released for Geometry Caluculator
