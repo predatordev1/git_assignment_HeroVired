@@ -1,6 +1,6 @@
 # git_assignment_HeroVired
 
-#Q1. Calculatop plus app.
+# Q1. Calculatop plus app.
 
 Calculator plus app Version 1 released.
 
@@ -10,7 +10,7 @@ Calculator plus app version 2 released .
 
 
 
-#Q2 . Geometry Caluculator designed
+# Q2 . Geometry Caluculator designed
 
 Cirecle Area calculator applied
 
