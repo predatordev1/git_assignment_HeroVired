@@ -9,11 +9,17 @@ class GeometryCalculator:
 if __name__ == "__main__":
     calculator = GeometryCalculator()
 
-radius = 5
+radius = float(input("Enter the radius of circle: "))
 print(f"The area of the circle with radius {radius} ={calculator.calculate_circle_area(radius)}")
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9e69b1e (bug fixed)
  
-length = 10
-width = 6
+length = float(input("Enter the length of rectangle: "))
+width = float(input("Enter the width of rectangle: "))
 print(f"The area of the rectangle with length {length} and width {width} = {calculator.calculate_rectangle_area(length, width)}")
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9e69b1e (bug fixed)
