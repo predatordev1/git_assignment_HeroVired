@@ -1,20 +1,3 @@
-# git_assignment_HeroVired
-
-# Q1. Calculatop plus app.
-
-Calculator plus app Version 1 released.
-
-## Bug Fixed in divide rule and square root added
-
-Calculator plus app version 2 released .
-
-
-
-# Q2 . Geometry Caluculator designed
-
-Cirecle Area calculator applied
-
-
-Rectangle Area feature added
-
-Final vwerion released for Geometry Caluculator
+version https://git-lfs.github.com/spec/v1
+oid sha256:994ae26db36f0f1f097a3d1fed764bff3f1c3b2a95adf410d3972e711471a142
+size 342

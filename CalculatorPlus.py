@@ -1,27 +1,3 @@
-import math
-
-class Calculators:
-        def add(self, a, b):
-                return a + b
-        def subtract(self, a, b):
-                return a - b
-        def multiply(self, a, b):
-                return a * b
-        def divide(self, a, b):
-                return a / b
-        def square_root(self, x):
-                return math.sqrt(x)
-
-if __name__ == "__main__":
-        calculator = Calculators()
-
-num1 = float(input("Enter the first Number :"))
-num2 = float(input("Enter the Second Number :"))
-
-print(f"{num1} + {num2} = {calculator.add(num1, num2)}")
-print(f"{num1} - {num2} = {calculator.subtract(num1, num2)}") 
-print(f"{num1} * {num2} = {calculator.multiply(num1, num2)}")
-print(f"{num1} / {num2} = {calculator.divide(num1, num2)}")
-
-num3 = float(input("Enter the square root Number :"))
-print(f"The square root of {num3} = {calculator.square_root(num3)}")
+version https://git-lfs.github.com/spec/v1
+oid sha256:cd409b691f994350701897f190aafb68bc4c94aa2ff8e4eeffa9766c6e70e026
+size 875
