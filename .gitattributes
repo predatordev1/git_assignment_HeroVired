@@ -1,0 +1,5 @@
+README.md filter=lfs diff=lfs merge=lfs -text
+testfile.bin filter=lfs diff=lfs merge=lfs -text
+area.py filter=lfs diff=lfs merge=lfs -text
+CalculatorPlus.py filter=lfs diff=lfs merge=lfs -text
+*.bin filter=lfs diff=lfs merge=lfs -text
