@@ -56,5 +56,15 @@
 <img width="1062" height="598" alt="image" src="https://github.com/user-attachments/assets/a2c256f3-061a-438c-8f80-7fa308147385" />
 <img width="1407" height="952" alt="image" src="https://github.com/user-attachments/assets/6922d841-7aa5-4015-9a5a-59806a87ae82" />
 
+## Tasks 3: Scaling the Application:
+Create Launch template using your current AMI of travelmemory APP to configure Load balancer
+<img width="1668" height="235" alt="image" src="https://github.com/user-attachments/assets/e50b0b25-ec03-437c-a07f-2c72260bb132" />
+
+Create Auto scalling group using your Launch template of travelmemory APP to configure Load balancer
+<img width="1662" height="832" alt="image" src="https://github.com/user-attachments/assets/f7cec098-adc7-4999-965a-3982df3b57f1" />
+<img width="1795" height="687" alt="image" src="https://github.com/user-attachments/assets/8045e837-205b-4815-9d33-d00ca35144e3" />
+<img width="1901" height="327" alt="image" src="https://github.com/user-attachments/assets/13ecbc80-e6e9-4e68-991b-65a3ed3b4029" />
+
+
 
 
