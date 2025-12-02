@@ -23,15 +23,20 @@
 <img width="1197" height="692" alt="image" src="https://github.com/user-attachments/assets/3d1e669b-0618-471f-a066-311d95632cc3" />
 
 ### The backend runs on port 3001. Set up a reverse proxy using nginx to ensure smooth deployment on EC2.
+<img width="908" height="288" alt="image" src="https://github.com/user-attachments/assets/a6981c5d-6009-4a33-ad1e-6b6078996198" />
+<img width="872" height="328" alt="image" src="https://github.com/user-attachments/assets/d06d2472-adaf-4a62-8d5e-e533b6e97bfb" />
+
+### Port 3001 removed from AWS security group and reverse proxy is working through nginx.
+<img width="1643" height="661" alt="image" src="https://github.com/user-attachments/assets/7194460b-7598-45c3-b45e-a2cccad82d37" />
+<img width="1037" height="847" alt="image" src="https://github.com/user-attachments/assets/b2a2a4ed-2c87-4a0d-b00f-65ca2e24328d" />
+<img width="827" height="275" alt="image" src="https://github.com/user-attachments/assets/c39da272-28de-483b-bd0a-d6fdc0aa1c3e" />
+
 ### Update the .env file to incorporate database connection details and port information.
 <img width="1407" height="245" alt="image" src="https://github.com/user-attachments/assets/a63a7ff2-d3c9-4fe6-9f51-b7dbb4f9f16e" />
 
 ### Installation of backend packages using npm install and start backend of application at Port 3001. 
 <img width="747" height="448" alt="image" src="https://github.com/user-attachments/assets/6475f087-1294-49c5-a384-5350e1bd0818" />
 <img width="736" height="62" alt="image" src="https://github.com/user-attachments/assets/e8882d29-80fb-4ffe-b28c-8f0298054b6d" />
-
-### Verification of Backedend, allow HTTPS & HTTP in security group of EC2 , then copy http://publicip of EC2:3000
-<img width="902" height="417" alt="image" src="https://github.com/user-attachments/assets/067f7672-cc4c-45a4-bc82-603e1cb72e63" />
 
 ## Tasks 2: Frontend Configuration:
 ### Login to EC2 Instance on another window:
@@ -48,5 +53,8 @@
 
 ### Start Frontend and test
 <img width="845" height="355" alt="image" src="https://github.com/user-attachments/assets/3a4a5858-c848-47a1-bdd2-6dc434611474" />
+<img width="1062" height="598" alt="image" src="https://github.com/user-attachments/assets/a2c256f3-061a-438c-8f80-7fa308147385" />
+<img width="1407" height="952" alt="image" src="https://github.com/user-attachments/assets/6922d841-7aa5-4015-9a5a-59806a87ae82" />
+
 
 
