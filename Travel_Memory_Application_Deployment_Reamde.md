@@ -65,6 +65,10 @@ Create Auto scalling group using your Launch template of travelmemory APP to con
 <img width="1795" height="687" alt="image" src="https://github.com/user-attachments/assets/8045e837-205b-4815-9d33-d00ca35144e3" />
 <img width="1901" height="327" alt="image" src="https://github.com/user-attachments/assets/13ecbc80-e6e9-4e68-991b-65a3ed3b4029" />
 
+Create Load balancer to handle user request and check with DNS link of load balancer; 
+<img width="1868" height="822" alt="image" src="https://github.com/user-attachments/assets/f30e0058-d001-458a-830b-94dcc9e4795d" />
+<img width="1206" height="692" alt="image" src="https://github.com/user-attachments/assets/a518497a-aa08-463a-bfe4-f61a9a439b0b" />
+
 
 
 
