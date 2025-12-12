@@ -69,6 +69,26 @@ Create Load balancer to handle user request and check with DNS link of load bala
 <img width="1868" height="822" alt="image" src="https://github.com/user-attachments/assets/f30e0058-d001-458a-830b-94dcc9e4795d" />
 <img width="1206" height="692" alt="image" src="https://github.com/user-attachments/assets/a518497a-aa08-463a-bfe4-f61a9a439b0b" />
 
+## Tasks 4: Installation of SSL on Load balancers for both Backend and frontend:
+<img width="1671" height="736" alt="image" src="https://github.com/user-attachments/assets/ce45743a-4b95-4889-bfc2-5d965d88ac8f" />
+<img width="1680" height="755" alt="image" src="https://github.com/user-attachments/assets/bb382523-bfe0-45b1-a26a-a9f79e2cb6b5" />
+<img width="1582" height="243" alt="image" src="https://github.com/user-attachments/assets/eb85dde4-b8aa-4561-ae3d-4dc5faa21396" />
+<img width="1437" height="651" alt="image" src="https://github.com/user-attachments/assets/23eb888d-32cf-4ae0-b5ca-da38ae2c5488" />
+<img width="1173" height="292" alt="image" src="https://github.com/user-attachments/assets/633791f1-b46f-407b-b99e-c4aa59889ed0" />
+<img width="1484" height="882" alt="image" src="https://github.com/user-attachments/assets/03c42895-c02a-42e6-93cb-9cd9035a830d" />
+<img width="1317" height="413" alt="image" src="https://github.com/user-attachments/assets/aa52500f-b588-46d5-88f1-3801ee5a4838" />
+
+### Testing of website.
+<img width="1430" height="748" alt="image" src="https://github.com/user-attachments/assets/bd62081d-3337-49a8-b46a-e7d07bb7a945" />
+<img width="916" height="848" alt="image" src="https://github.com/user-attachments/assets/3a285543-4931-42d0-8b98-8ea94b698789" />
+<img width="1442" height="937" alt="image" src="https://github.com/user-attachments/assets/a17f516c-2410-42e6-a8a1-fb058d5c3cd8" />
+
+
+
+
+
+
+
 
 
 
