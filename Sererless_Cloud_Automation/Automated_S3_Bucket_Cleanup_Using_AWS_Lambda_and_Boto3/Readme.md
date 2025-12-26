@@ -27,7 +27,31 @@
 <h3> Complete pthon code for S3 celanup more than 30 days and deploy into lambda function.</h3>
 For python code checkout : https://github.com/predatordev1/git_assignment_HeroVired/blob/main/Sererless_Cloud_Automation/Automated_S3_Bucket_Cleanup_Using_AWS_Lambda_and_Boto3/Automated%20_S3_Object_DeletionUsing_AWS_Lambda_and_Boto3.py
 
+
 <img width="1531" height="716" alt="image" src="https://github.com/user-attachments/assets/3e307996-fa0f-4440-86ab-f93b7dbbc883" />
 <img width="1626" height="866" alt="image" src="https://github.com/user-attachments/assets/89a41b71-88fc-4a00-996d-be042dcb5e02" />
+
+<h3>Assign created IAM role and timeout values more than or equl to 2 mins. </h3>
+<img width="1515" height="667" alt="image" src="https://github.com/user-attachments/assets/10cfd70c-b3c9-4b36-91bc-9fc7ec173d50" />
+<img width="1472" height="786" alt="image" src="https://github.com/user-attachments/assets/720a251d-ab9b-4379-8bf1-72a6943144a9" />
+
+<h2> Now Lambda function is ready for testing. </h2>
+<h2> Step 4: Now we will test the code and lambda function.</h2>
+<h3>Create a Test event and hit Test button.</h3>
+<img width="1617" height="787" alt="image" src="https://github.com/user-attachments/assets/db0f3f0e-cd56-47f7-a765-792ab2557344" />
+
+<h3> Once Test get Success check for details and execution logs. </h3>
+<h4>In Execution details will show the return output of code and in Cloudwatch will show print statement output.</h4>
+<img width="1540" height="761" alt="image" src="https://github.com/user-attachments/assets/783e2998-f60a-4533-ac81-6b2526c93339" />
+<img width="1743" height="718" alt="image" src="https://github.com/user-attachments/assets/a4aba63c-ab1c-43ca-9cf0-a46403c0be95" />
+
+<h3> In above test funtion in keeping all files since Sytem date and S3 bucket time both are same.</h3>
+<img width="1468" height="461" alt="image" src="https://github.com/user-attachments/assets/ea83ed62-7048-424c-a3d7-9f69c61ef6db" />
+<img width="1566" height="501" alt="image" src="https://github.com/user-attachments/assets/8557aba2-4e84-419c-b9b9-d9b2711006cc" />
+
+<h2> Now again we will test by Changing system date by 31 days.</h2>
+
+
+
 
 
