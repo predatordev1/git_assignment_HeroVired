@@ -31,5 +31,6 @@ def lambda_handler(event, context):
     print(f"\n{'*'*50}")
     return{
         'statusCode': 200,
-        'body': f'{len(sse_s3_buckets)} buckets are with SSE-S3 encryption named {sse_s3_buckets}.\n {len(sse_kms_buckets)} buckets are with SSE-KMS encryption named {sse_kms_buckets}.\n{len(dsse_kms_buckets)} buckets are with DSSE-KMS encryption named {dsse_kms_buckets}'
+        'body': f'{len(sse_s3_buckets)} buckets are with SSE-S3 encryption named {sse_s3_buckets}. {len(sse_kms_buckets)} buckets are with SSE-KMS encryption named {sse_kms_buckets}.{len(dsse_kms_buckets)} buckets are with DSSE-KMS encryption named {dsse_kms_buckets}'
+
         }
