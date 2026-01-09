@@ -39,9 +39,19 @@ pipeline {
                 cp git_assignment_HeroVired/CI-CD_Pipeline/ci_cd_app.py \
                    git_assignment_HeroVired/CI-CD_Pipeline/cicd_logs/
             '''
+            emailext (
+                subject: "SUCCESS: cicd_flask_app pipeline status",
+                body: "Pipeline succeeded. Flask app has been deployed successfully.",
+                to: "devendra8182@gmail.com"
+            )
         }
         failure {
             echo "Pipeline failed, skipping deployment"
+            emailext (
+                subject: "FAILURE: cicd_flask_app pipeline failed",
+                body: "Pipeline failed. Please check Jenkins console output for details.",
+                to: "devendra8182@gmail.com"
+            )
         }
     }
 }
