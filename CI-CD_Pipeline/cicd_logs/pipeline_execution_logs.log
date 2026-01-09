@@ -1,0 +1,64 @@
+Started by user Devendra Kumar
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on devendra in /var/jenkins/agent/devendra/workspace/ci_cd_flask_app
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Clone Github Repo)
+[Pipeline] sh
++ git clone -b main https://github.com/predatordev1/git_assignment_HeroVired.git
+Cloning into 'git_assignment_HeroVired'...
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Installation of flask)
+[Pipeline] sh
++ pip3 install flask
+Requirement already satisfied: flask in /usr/local/lib/python3.12/site-packages (3.1.2)
+Requirement already satisfied: blinker>=1.9.0 in /usr/local/lib/python3.12/site-packages (from flask) (1.9.0)
+Requirement already satisfied: click>=8.1.3 in /usr/local/lib/python3.12/site-packages (from flask) (8.3.1)
+Requirement already satisfied: itsdangerous>=2.2.0 in /usr/local/lib/python3.12/site-packages (from flask) (2.2.0)
+Requirement already satisfied: jinja2>=3.1.2 in /usr/local/lib/python3.12/site-packages (from flask) (3.1.6)
+Requirement already satisfied: markupsafe>=2.1.1 in /usr/local/lib64/python3.12/site-packages (from flask) (3.0.3)
+Requirement already satisfied: werkzeug>=3.1.0 in /usr/local/lib/python3.12/site-packages (from flask) (3.1.5)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Testing of flask app)
+[Pipeline] sh
++ cd git_assignment_HeroVired/CI-CD_Pipeline
++ sleep 5
++ python3 ./ci_cd_app.py
+ * Serving Flask app 'ci_cd_app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.2:5000
+[33mPress CTRL+C to quit[0m
++ curl -f http://localhost:5000
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0127.0.0.1 - - [10/Jan/2026 00:33:03] "GET / HTTP/1.1" 200 -
+
+100    21  100    21    0     0   4139      0 --:--:-- --:--:-- --:--:--  4200
+Flask app is running!+ pkill -f ci_cd_app.py
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Declarative: Post Actions)
+[Pipeline] echo
+Flask app works good, deploying now...
+[Pipeline] sh
++ cp git_assignment_HeroVired/CI-CD_Pipeline/ci_cd_app.py git_assignment_HeroVired/CI-CD_Pipeline/cicd_logs/
+[Pipeline] emailext
+Sending email to: devendra8182@gmail.com
+Not sent to the following valid addresses: devendra8182@gmail.com
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
