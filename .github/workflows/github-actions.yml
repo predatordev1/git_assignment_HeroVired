@@ -17,8 +17,7 @@ jobs:
     steps:
       - name: Clone Python application from URL
         run: |
-          https://github.com/predatordev1/git_assignment_HeroVired.git
-          cd git_assignment_HeroVired/CI-CD_Pipeline/Github_Actions/
+          https://github.com/predatordev1/git_assignment_HeroVired/blob/main/CI-CD_Pipeline/Github_Actions/ci_cd_app.py App
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -27,13 +26,13 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd git_assignment_HeroVired/CI-CD_Pipeline/Github_Actions/
+          cd App
           python -m pip install --upgrade pip
           pip install pytest
 
       - name: Run tests
         run: |
-          cd git_assignment_HeroVired/CI-CD_Pipeline/Github_Actions/
+          cd App
           pytest || echo "No tests found, skipping"
 
       - name: Build application
