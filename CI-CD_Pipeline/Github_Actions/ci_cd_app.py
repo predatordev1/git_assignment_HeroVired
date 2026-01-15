@@ -8,7 +8,7 @@ def health_check():
 
 @ci_cd_app.route("/contact", methods=["POST", "GET"])
 def Hello():
-    return "Hello Devendra"
+    return "Hello Devendra flask App"
 
 if __name__ == '__main__':
     ci_cd_app.run(host='0.0.0.0', port=5000, debug=False)
