@@ -17,7 +17,7 @@ jobs:
     steps:
       - name: Clone Python application from URL
         run: |
-          https://github.com/predatordev1/git_assignment_HeroVired/blob/main/CI-CD_Pipeline/Github_Actions/ci_cd_app.py App
+          git clone git clone https://github.com/predatordev1/git_assignment_HeroVired.git App
 
       - name: Set up Python
         uses: actions/setup-python@v5
