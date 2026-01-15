@@ -8,6 +8,8 @@ on:
     branches:
       - main
       - staging
+  release:
+    types: [published]
 
 jobs:
   ci:
@@ -38,12 +40,12 @@ jobs:
 
       - name: Build application
         run: |
-          echo "Build completed no error"
+          echo "Build completed"
 
   deploy-staging:
     name: Deploy to Staging
     needs: ci
-    if: github.ref == 'refs/heads/staging'
+    if: github.ref == 'refs/heads/staging' && github.event_name == 'push'
     runs-on: ubuntu-latest
 
     steps:
@@ -53,11 +55,12 @@ jobs:
       - name: Deploy to staging environment
         run: |
           echo "Deploying to staging environment"
+          # Add your staging deployment commands here
           
   deploy-production:
     name: Deploy to Production
     needs: ci
-    if: github.event_name == 'release'
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     runs-on: ubuntu-latest
 
     steps:
@@ -67,3 +70,4 @@ jobs:
       - name: Deploy to production environment
         run: |
           echo "Deploying to production environment"
+          # Add your production deployment commands here
