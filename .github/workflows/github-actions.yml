@@ -38,7 +38,7 @@ jobs:
 
       - name: Build application
         run: |
-          echo "Build completed"
+          echo "Build completed no error"
 
   deploy-staging:
     name: Deploy to Staging
