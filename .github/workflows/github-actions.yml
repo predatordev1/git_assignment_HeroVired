@@ -1,4 +1,5 @@
 name: CI CD Pipeline using Github Actions
+
 on:
   push:
     branches:
@@ -8,6 +9,9 @@ on:
     branches:
       - main
       - staging
+  release:
+    types:
+      - created
 
 jobs:
   ci:
@@ -15,10 +19,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Clone Python application from URL
+      - name: Clone Python application (staging or main branch)
         run: |
-          git clone git clone -n https://github.com/predatordev1/git_assignment_HeroVired.git
+          # Clone staging branch if on staging, else main branch
+          if [[ "${GITHUB_REF}" == "refs/heads/staging" ]]; then
+            git clone -b staging https://github.com/predatordev1/git_assignment_HeroVired.git
+          else
+            git clone -b main https://github.com/predatordev1/git_assignment_HeroVired.git
+          fi
           cd git_assignment_HeroVired/CI-CD_Pipeline/Github_Actions/
+          ls -l
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -38,7 +48,7 @@ jobs:
 
       - name: Build application
         run: |
-          echo "Build completed"
+          echo "Build completed successfully"
 
   deploy-staging:
     name: Deploy to Staging
@@ -47,12 +57,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source code
-        uses: actions/checkout@v4
-
-      - name: Deploy to staging environment
+      - name: Clone staging branch for deployment
         run: |
-          echo "Deploying to staging environment"
+          git clone -b staging https://github.com/predatordev1/git_assignment_HeroVired.git
+
+      - name: Copy code to staging directory
+        run: |
+          mkdir -p /tmp/staging-app
+          cp -r git_assignment_HeroVired/* /tmp/staging-app/
+          echo "Staging deployment completed"
+
   deploy-production:
     name: Deploy to Production
     needs: ci
@@ -60,9 +74,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source code
-        uses: actions/checkout@v4
-
-      - name: Deploy to production environment
+      - name: Clone main branch for production deployment
         run: |
-          echo "Deploying to production environment"
+          git clone -b main https://github.com/predatordev1/git_assignment_HeroVired.git
+
+      - name: Copy code to production directory
+        run: |
+          mkdir -p /tmp/production-app
+          cp -r git_assignm_
