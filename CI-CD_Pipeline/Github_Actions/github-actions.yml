@@ -60,7 +60,7 @@ jobs:
   deploy-production:
     name: Deploy to Production
     needs: ci
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    if: github.ref == 'refs/heads/staging' && github.event_name == 'push'
     runs-on: ubuntu-latest
 
     steps:
